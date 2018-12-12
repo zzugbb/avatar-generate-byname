@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.name-input {
+  margin: 50px 0 0 170px;
+  padding: 0;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  text-indent: 10px;
+}
+
+.create-avatar {
+  margin: 50px 0 0 30px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 90px;
+  text-align: center;
+  height: 34px;
+  line-height: 34px;
+  background-color: #27c675;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.name-div {
+  margin: 30px 0 0 170px;
+}
+
+.name-div img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
