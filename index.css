@@ -35,3 +35,30 @@ body {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+
+.canvas-div {
+  float: left;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.canvas-div div {
+  float: left;
+  width: 100px;
+}
+
+.download {
+  font-size: 12px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 80px;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  background-color: #27c675;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}

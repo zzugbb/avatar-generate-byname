@@ -8,8 +8,41 @@
   <title>头像生成</title>
 </head>
 <body>
-  <input type="text" class="name-input" placeholder="请输入用户名"/>
-  <span class="create-avatar">点击生成</span>
+  <div style="float: left;"> 
+    <input type="text" class="name-input" placeholder="请输入用户名"/>
+    <span class="create-avatar">点击生成</span>
+  </div>
+  <div class="canvas-div">
+    <div>
+      <img id="canvas-img-0" src="" style="display: none"/>
+      <a id="canvas-a-0" href="" style="display: none"/></a>
+      <canvas id="canvas-0" width="80" height="80" style="border: 1px solid #eaeaea">
+      </canvas>
+      <span class="download" id="0">下载</span>
+    </div>
+    <div>
+      <img id="canvas-img-1" src="" style="display: none"/>
+      <a id="canvas-a-1" href="" style="display: none"></a>
+      <canvas id="canvas-1" width="80" height="80" style="border: 1px solid #eaeaea">
+      </canvas>
+      <span class="download" id="1">下载</span>
+    </div>
+    <div>
+      <img id="canvas-img-2" src="" style="display: none"/>
+      <a id="canvas-a-2" href="" style="display: none"/></a>
+      <canvas id="canvas-2" width="80" height="80" style="border: 1px solid #eaeaea">
+      </canvas>
+      <span class="download" id="2">下载</span>
+    </div>
+    <div>
+      <img id="canvas-img-3" src="" style="display: none"/>
+      <a id="canvas-a-3" href="" style="display: none"/></a>
+      <canvas id="canvas-3" width="80" height="80" style="border: 1px solid #eaeaea">
+      </canvas>
+      <span class="download" id="3">下载</span>
+    </div>
+  </div>
+  <div style="clear:both"></div>
   <div class="name-div"></div>
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
