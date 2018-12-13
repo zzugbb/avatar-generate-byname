@@ -33,15 +33,16 @@ $(function(){
 
     var lastNameUriCircle = 'data:image/svg+xml,' + encodeURIComponent(createSVGCircle(backgroundColor, name.slice(0, 1)).outerHTML);
     var lastNameUri = 'data:image/svg+xml,' + encodeURIComponent(createSVG(backgroundColor, name.slice(0, 1)).outerHTML);
+    //: 'data:image/svg+xml;base64,' + window.btoa(unescape(encodeURIComponent(svg.outerHTML)));
 
-    svgToPng(0, createSVGCircle(backgroundColor, name.slice(0, 1)));
-    svgToPng(1, createSVG(backgroundColor, name.slice(0, 1)));
+    svgToPng(0, lastNameUriCircle);
+    svgToPng(1, lastNameUri);
 
     var firstNameUriCircle = 'data:image/svg+xml,' + encodeURIComponent(createSVGCircle(backgroundColor, name.slice(-2)).outerHTML);
     var firstNameUri = 'data:image/svg+xml,' + encodeURIComponent(createSVG(backgroundColor, name.slice(-2)).outerHTML);
     
-    svgToPng(2, createSVGCircle(backgroundColor, name.slice(0, -2)));
-    svgToPng(3, createSVG(backgroundColor, name.slice(-2)));
+    svgToPng(2, firstNameUriCircle);
+    svgToPng(3, firstNameUri);
  
     var lastImgDivCircle = '<img src=' + lastNameUriCircle +  '>'
     var lastImgDiv = '<img src=' + lastNameUri +  '>'
@@ -147,10 +148,12 @@ $(function(){
   //转化为png下载
   function svgToPng(flag, svg) {
     var img = document.getElementById("canvas-img-" + flag);
-    img.src = 'data:image/svg+xml;base64,' + window.btoa(unescape(encodeURIComponent(svg.outerHTML)));
+    img.src = svg;
     var canvas = document.getElementById("canvas-" + flag);
     var context = canvas.getContext('2d');
-    context.drawImage(img, 15, 15);
+    setTimeout(function() { //此处为了解决素材图img没设置好的问题,否则画不出. 
+      context.drawImage(img, 15, 15);
+    }, 0);
 
     var a = document.getElementById("canvas-a-" + flag);
     a.href = canvas.toDataURL('image/png');
