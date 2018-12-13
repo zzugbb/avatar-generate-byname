@@ -6,7 +6,9 @@
 
 可以取 `first name` 或 `last name`, 如果是英文，则会转为大写。 具体示例如下:
 
-生成后可以右键下载对应 `SVG文件`
+生成后可以右键下载对应 `SVG文件`, 同时提供了 `png` 格式的图片的下载，见下图。
+
+每次支取最后生成的四张。
 
 <img src="img/data1.jpg">
 <img src="img/data2.jpg">

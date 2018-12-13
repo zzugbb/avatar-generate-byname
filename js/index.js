@@ -25,6 +25,13 @@ $(function(){
     crateImage();
   })
 
+  //输入框回车
+  $('.name-input').keydown(function(e){ 
+    if (e.keyCode == 13) {  
+      crateImage();
+    }  
+  });
+
 
   function crateImage() {
     var index = Math.floor((Math.random()*options.backgroundColors.length));
