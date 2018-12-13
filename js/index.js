@@ -157,6 +157,8 @@ $(function(){
     var img = document.getElementById("canvas-img-" + flag);
     img.src = svg;
     var canvas = document.getElementById("canvas-" + flag);
+    canvas.width = 80;
+    canvas.height = 80;
     var context = canvas.getContext('2d');
     setTimeout(function() { //此处为了解决素材图img没设置好的问题,否则画不出. 
       context.drawImage(img, 15, 15);
