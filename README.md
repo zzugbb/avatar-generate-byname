@@ -8,7 +8,7 @@
 
 生成后可以右键下载对应 `SVG文件`, 同时提供了 `png` 格式的图片的下载，见下图。
 
-每次支取最后生成的四张。
+`png` 格式每次只取最后生成的四张。
 
 <img src="img/data1.jpg">
 <img src="img/data2.jpg">
