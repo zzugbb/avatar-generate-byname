@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/language-javascript-red.svg)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
-![](https://img.shields.io/badge/repo%20size-76kb-green.svg)
+![](https://img.shields.io/badge/repo%20size-77kb-green.svg)
 
 
 通过用户名生成头像(SVG版本), 简易版，见参考项目，更多功能。
